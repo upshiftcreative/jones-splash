@@ -1,0 +1,77 @@
+#gf-form-container {
+    display: none;
+}
+h3.gform_title {
+    display: none !important;
+}
+#gf-form-container, #gform_confirmation_wrapper_1 {
+    color: black;
+    position: absolute;
+    width: 100%;
+    max-width: 960px;
+    z-index: 10;
+    top: 30px;
+    left: 30px;
+    height: calc(100% - 60px);
+    width: calc(100% - 60px);
+    background-color: $lighttan;
+}
+
+.close-form {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    i {
+        font-size: 30px;
+    }
+}
+
+#gform_1 {
+    background: $lighttan;
+    padding: 15px;
+}
+.gform_wrapper li.gfield.gfield_html {
+    color: black;
+}
+.gform_wrapper .field_sublabel_above .ginput_complex.ginput_container label {
+    display: none !important;
+}
+
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=image]):not([type=file]) {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+
+}
+
+.gform_wrapper ::placeholder {
+    color: black;
+}
+
+.nice-select {
+    background-color: transparent;
+    color: black;
+    border-bottom: 2px solid black;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 0;
+    &:hover {
+        border: none;
+        border-bottom: 2px solid black;
+    }
+}
+.nice-select .list {
+    color: black;
+    width: 100%;
+    margin-left: 0;
+}
+
+@media all and (min-width: 1020px) {
+    #gf-form-container, #gform_confirmation_wrapper_1 {
+        left: calc(50% - 480px);
+        width: 960px;
+    }
+   
+}

@@ -1,0 +1,64 @@
+.hero {
+    background-color: none;
+    width: 100%;
+    height: 740px;
+    position: relative;
+}
+
+@media all and (min-height: 1000px) {
+    .hero {
+        
+        height: calc(100vh - 300px);
+    }
+}
+
+.slide {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: opacity 2s;
+    color: #d1d3d4;
+    text-align: center;
+    .hero-text {
+        max-width: 850px;
+        padding-top: 200px;
+        margin: 0 auto;
+    }
+    blockquote p{
+        font-family: 'Limelight', sans-serif;
+        font-size: 3.125rem;
+        line-height: 1.35em;
+        max-width: 850px;
+        margin-bottom: 25px;
+    }
+
+    .citation {
+        font-size: 1.312rem;
+        font-family: 'Henderson Sans';
+        font-weight: normal;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+    }
+
+    .quote-meta {
+        font-size: 1.2rem;
+    }
+    &.active {
+        opacity: 1;
+        z-index: 3;
+        transition: opacity 2s;
+    }
+    &.slide-four {
+        blockquote p {
+            font-family: 'GilSansSha';
+        }
+    }
+}

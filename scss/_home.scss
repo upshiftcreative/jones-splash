@@ -1,0 +1,59 @@
+.main-content {
+    background-color: $darkgreen;
+}
+
+
+
+.main-cta {
+    margin-bottom: 25px;
+}
+ 
+.button {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: right;
+    text-decoration: none;
+    font-size: .8rem;
+    letter-spacing: .09rem;
+    font-family: 'Henderson', sans-serif;
+    transition: all .2s;
+    &.join-button {
+        color: $brown;
+        background-color: $lighttan;
+        transition: all .2s;
+        &:hover {
+            color: $lighttan;
+            background-color: $brown;
+            transition: all .2s;
+        }
+    }
+    &.submit {
+        color: $lighttan;
+        background-color: $brown;
+        &:hover {
+            color: $brown;
+            background-color: $lighttan;
+            transition: all .2s;
+        }
+    }
+}
+
+.main-copy {
+    margin-top: 0;
+}
+
+@media all and (min-width: 768px) {
+    .main-content>.container {
+        background-image: url('../images/ladder.png');
+        background-repeat: repeat-y;
+    }
+    .body-content {
+        display: flex;
+    }
+    .join-button {
+        // float: right;
+        
+    }
+    
+}

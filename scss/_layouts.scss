@@ -1,0 +1,37 @@
+// slides
+
+// main
+.main-copy-container {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.body-content {
+    display: block;
+}
+
+
+// utility
+.justify-edges {
+    display: block;
+    width: 100%;
+}
+@media all and (min-width: 768px) {
+    .justify-edges {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-copy-container {
+        width: 100%;
+        padding-left: 135px;
+    }
+    .main-copy {
+        width: calc(100% - 255px);
+        padding-right: 80px;
+    }
+    .body-content {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+}
